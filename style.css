@@ -1,0 +1,49 @@
+body{
+    background-image: linear-gradient( 68.4deg,  rgba(99,251,215,1) -0.4%, rgba(250, 5, 5, 0.5) 100.2% );
+    background-size: 200%;
+    animation: bg 2s infinite alternate-reverse;
+}
+img{
+    border-radius: 50%;
+    animation-name: gambar;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+img:hover{
+    transform:scale(1.1);
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+@keyframes gambar {
+
+    0%{
+        border-radius: 0%;
+        opacity: 0%;
+        transform: rotateY(0deg) rotateX(0deg);
+    }
+    100%{
+        border-radius: 50%;
+        opacity: 100%;
+        transform: rotateY(0deg) rotateX(360deg);
+    }
+    
+}
+
+@keyframes bg {
+
+    0%{
+        background-position-x: left;
+        background-position-y: top;
+    }
+    100%{
+        background-position-x: right;
+        background-position-y: bottom;
+    }
+    
+}
